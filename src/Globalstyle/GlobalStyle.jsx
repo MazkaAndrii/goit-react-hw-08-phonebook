@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
       Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
       sans-serif;
     background-color: #fff;
-    color: #010101;
+    color:#fff;
   }
   img,
   svg {

@@ -8,7 +8,7 @@ export const HomeWrapper = styled.section`
   align-items: center;
   justify-content: center;
   margin: 25px auto;
-  background-color: #df1b21;
+  /* background-color: #2a2e29; */
   border-radius: 8px;
   box-shadow: 19px 27px 67px 13px rgba(0, 0, 0, 0.57);
   padding: 30px;
