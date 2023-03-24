@@ -19,7 +19,7 @@ export const SectionWrapper = styled.section`
     padding: 20px;
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 500px) {
     width: 300px;
     height: auto;
     padding: 10px;
