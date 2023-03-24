@@ -12,4 +12,16 @@ export const Link = styled(NavLink)`
     color: white;
     background-color: #5062c7;
   }
+
+  /* Styles for screen width 320px */
+  @media screen and (max-width: 320px) {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* Styles for screen width 768px */
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
 `;

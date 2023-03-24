@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const HomeWrapper = styled.section`
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -15,17 +16,26 @@ export const HomeWrapper = styled.section`
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 export const Section = styled.section`
   margin: 10px auto;
 `;
+
 export const Header1 = styled.h2`
   margin: 20px auto;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
+
+  @media screen and (max-width: 320px) {
+    font-size: 24px;
+  }
 `;
 
 export const ListEl = styled.li`
@@ -42,8 +52,19 @@ export const List = styled.ul`
   align-items: center;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
 `;
 
 export const HomeText = styled.p`
   text-align: center;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;

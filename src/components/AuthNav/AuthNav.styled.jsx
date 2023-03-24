@@ -13,4 +13,14 @@ export const Link = styled(NavLink)`
     color: white;
     background-color: #5062c7;
   }
+
+  @media screen and (max-width: 768px) {
+    height: 35px;
+  }
+
+  @media screen and (max-width: 320px) {
+    height: 25px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
 `;

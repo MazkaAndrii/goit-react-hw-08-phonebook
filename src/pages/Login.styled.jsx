@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Button = styled.button`
   display: block;
   margin-top: 10px;
-
   margin-bottom: 10px;
   border-radius: 5px;
   padding: 0px 10px;
@@ -11,6 +10,16 @@ export const Button = styled.button`
   border: none;
   background-color: #5062c7;
   font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  @media screen and (max-width: 320px) {
+    font-size: 12px;
+    padding: 3px 5px;
+  }
 `;
 
 export const LoginWrapper = styled.section`
@@ -23,5 +32,14 @@ export const LoginWrapper = styled.section`
   padding: 30px;
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin: 10px;
+    padding: 20px;
   }
 `;

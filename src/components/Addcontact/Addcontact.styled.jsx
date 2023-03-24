@@ -14,6 +14,18 @@ export const Button = styled.button`
   border: none;
   background-color: #5062c7;
   font-weight: 700;
+
+  /* Styles for screen width 320px */
+  @media screen and (max-width: 320px) {
+    max-width: 80px;
+    font-size: 14px;
+  }
+
+  /* Styles for screen width 768px */
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+    max-width: 120px;
+    font-size: 16px;
+  }
 `;
 
 export const FormParagraph = styled.p`
@@ -22,7 +34,7 @@ export const FormParagraph = styled.p`
 `;
 
 export const AddContactWrapper = styled.section`
-  width: 300px;
+  width: auto;
   height: auto;
   display: block;
   margin: 25px auto;

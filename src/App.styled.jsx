@@ -12,4 +12,16 @@ export const SectionWrapper = styled.section`
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  @media (max-width: 768px) {
+    width: 700px;
+    height: auto;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+  }
 `;

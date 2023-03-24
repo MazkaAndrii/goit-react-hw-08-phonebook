@@ -14,6 +14,17 @@ export const Header = styled.header`
   > nav {
     display: flex;
   }
+
+  @media (max-width: 320px) {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+
+    > nav {
+      margin-top: 8px;
+    }
+  }
 `;
 
 export const Container = styled.div`
@@ -21,4 +32,12 @@ export const Container = styled.div`
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 16px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+
+  @media (max-width: 320px) {
+    padding: 0 8px;
+  }
 `;

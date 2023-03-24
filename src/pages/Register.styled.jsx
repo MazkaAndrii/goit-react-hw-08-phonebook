@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Button = styled.button`
   display: block;
   margin-top: 10px;
-
   margin-bottom: 10px;
   border-radius: 5px;
   padding: 0px 10px;
@@ -11,6 +10,10 @@ export const Button = styled.button`
   border: none;
   background-color: #5062c7;
   font-weight: 700;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const RegisterWrapper = styled.section`
@@ -23,5 +26,17 @@ export const RegisterWrapper = styled.section`
   padding: 30px;
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+    margin: 25px auto;
+    padding: 20px;
+  }
+
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
   }
 `;

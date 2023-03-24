@@ -15,4 +15,16 @@ export const Wrapper = styled.section`
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  @media screen and (max-width: 320px) {
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+  }
 `;
