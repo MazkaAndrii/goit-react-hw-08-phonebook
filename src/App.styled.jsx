@@ -19,9 +19,10 @@ export const SectionWrapper = styled.section`
     padding: 20px;
   }
 
-  @media screen and (max-width: 500px) {
-    width: 300px;
-    height: auto;
+  @media screen and (max-width: 420px) {
+    max-width: 100%;
+    height: 896px;
     padding: 10px;
+    margin: 0;
   }
 `;
